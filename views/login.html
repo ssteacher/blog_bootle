@@ -1,0 +1,67 @@
+<!DOCTUPE html>
+<html>
+<head>
+    <title>Hello</title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="span9">
+            <!-- header -->
+            <div class="navbar navbar-inner">
+              <a class="brand" href="#">BottleMongoBlog</a>
+                <ul class="nav">
+                  <li><a href="/">Home</a></li>
+                  <li class="divider-vertical"></li>
+                  <li><a href="/post">Posts</a></li>
+                  <li class="divider-vertical"></li>
+                  <li><a href="/userlist">Users</a></li>
+                </ul>
+                <ul class="nav pull-right">
+
+                  <li>
+                    <a href="/login">Sing in</a>
+                  </li>
+
+                </ul>
+            </div>
+            <!-- end header -->
+            
+        <h1>Login to you acount</h1><hr>
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span1"></div>
+              <div class="span3">
+
+
+    <form class="form-signin" method="post" action="/newpost">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <input type="text" class="input-block-level" placeholder="Username" name="username">
+        <input type="password" class="input-block-level" placeholder="Password" name="password" value="">
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+<!-- 
+<div id="demo" class="collapse out">
+<input type="text" class="input-block-level" placeholder="Email address">
+</div>
+-->
+        <input class="btn btn-large btn-primary" type="submit" value="Sign in">
+    </form>
+    <p class="muted credit">Or <a href="#" data-toggle="collapse" data-target="#demo">Sign up</a> now!
+
+
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+</div>
+
+</body>
+</html>

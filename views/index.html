@@ -1,0 +1,65 @@
+<!DOCTUPE html>
+<html>
+<head>
+    <title>Hello</title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="span9">
+            <!-- header -->
+            <div class="navbar navbar-inner">
+              <a class="brand" href="#">BottleMongoBlog</a>
+                <ul class="nav">
+                  <li><a href="/">Home</a></li>
+                  <li class="divider-vertical"></li>
+                  <li><a href="/post">Posts</a></li>
+                  <li class="divider-vertical"></li>
+                  <li><a href="/userlist">Users</a></li>
+                </ul>
+                <ul class="nav pull-right">
+
+                  <li>
+                    <a href="/login">Sing in</a>
+                  </li>
+
+                </ul>
+            </div>
+            <!-- end header -->
+            <h2>Welcome!!</h2><hr>
+            
+            <div class="row">
+              <div class="span6">
+                %for key in message_list:        
+                <p>
+
+                <i class="icon-User"></i>         
+                <a href="/userprifile/id"><u>{{key["user"]}} </a>say:</u><br />
+<div class="well well-large">
+                {{key["message"]}}<br />
+                <i class="icon-tags"></i> 
+                %for item in key["tags"]:
+                    <a href="/post/{{item}}">{{item}}</a>
+                %end
+</div>
+                </p>
+                %end                
+              </div>
+              <div class="span3">
+
+<ul class="nav nav-list">
+  <li class="nav-header">Main menu</li>
+  <li class="active"><a href="/">Home</a></li>
+  <li><a href="/post">Posts</a></li>
+</ul>
+              </div>
+            </div>
+          </div>
+        </div>   
+        
+                
+    </div>
+</body>
+</html>
